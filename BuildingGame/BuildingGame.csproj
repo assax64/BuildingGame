@@ -41,9 +41,37 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\AnimatedText.cs" />
+    <Compile Include="src\AnnoGame.cs" />
+    <Compile Include="src\BuildManager.cs" />
+    <Compile Include="src\Camera.cs" />
+    <Compile Include="src\CellSelection.cs" />
+    <Compile Include="src\Fonts.cs" />
+    <Compile Include="src\GameView.cs" />
+    <Compile Include="src\Input.cs" />
+    <Compile Include="src\Inventory.cs" />
+    <Compile Include="src\Item.cs" />
+    <Compile Include="src\Map\Cell.cs" />
+    <Compile Include="src\Map\Grid.cs" />
+    <Compile Include="src\Map\Map.cs" />
+    <Compile Include="src\Map\MapObjects\Building.cs" />
+    <Compile Include="src\Map\MapObjects\Holzfäller.cs" />
+    <Compile Include="src\Map\MapObjects\MapObject.cs" />
+    <Compile Include="src\Map\MapObjects\NatureObject.cs" />
+    <Compile Include="src\Map\MapObjects\Strasse.cs" />
+    <Compile Include="src\Map\MapObjects\Tree.cs" />
+    <Compile Include="src\Map\MapObjects\Wohnhaus.cs" />
+    <Compile Include="src\Minimap.cs" />
+    <Compile Include="src\MouseCursor.cs" />
+    <Compile Include="src\Overlay.cs" />
+    <Compile Include="src\ProductionHandler.cs" />
+    <Compile Include="src\Sprite\AnimatedSprite.cs" />
+    <Compile Include="src\Sprite\Sprite.cs" />
+    <Compile Include="src\Sprite\Sprites.cs" />
+    <Compile Include="src\Sprite\StaticSprite.cs" />
+    <Compile Include="src\StaticText.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -53,11 +81,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\buildings\holzfäller.png" />
+    <Content Include="Content\gui\bar.png" />
+    <Content Include="Content\gui\blockedspace.png" />
+    <Content Include="Content\gui\cursor.png" />
+    <Content Include="Content\gui\freespace.png" />
+    <Content Include="Content\gui\holz.png" />
+    <Content Include="Content\gui\pixel.png" />
+    <Content Include="Content\gui\stein.png" />
+    <Content Include="Content\gui\werkzeug.png" />
+    <Content Include="Content\terrain\0.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+    <None Include="Content\bin\Windows\buildings\holzfäller.xnb" />
+    <None Include="Content\bin\Windows\gui\bar.xnb" />
+    <None Include="Content\bin\Windows\gui\blockedspace.xnb" />
+    <None Include="Content\bin\Windows\gui\cursor.xnb" />
+    <None Include="Content\bin\Windows\gui\font.xnb" />
+    <None Include="Content\bin\Windows\gui\freespace.xnb" />
+    <None Include="Content\bin\Windows\gui\holz.xnb" />
+    <None Include="Content\bin\Windows\gui\pixel.xnb" />
+    <None Include="Content\bin\Windows\gui\stein.xnb" />
+    <None Include="Content\bin\Windows\gui\werkzeug.xnb" />
+    <None Include="Content\bin\Windows\terrain\0.xnb" />
+    <None Include="Content\Content.mgcb" />
+    <None Include="Content\gui\font.spritefont" />
+    <None Include="Content\obj\Windows\.mgcontent" />
+    <None Include="Content\obj\Windows\buildings\holzfäller.mgcontent" />
+    <None Include="Content\obj\Windows\gui\bar.mgcontent" />
+    <None Include="Content\obj\Windows\gui\blockedspace.mgcontent" />
+    <None Include="Content\obj\Windows\gui\cursor.mgcontent" />
+    <None Include="Content\obj\Windows\gui\font.mgcontent" />
+    <None Include="Content\obj\Windows\gui\freespace.mgcontent" />
+    <None Include="Content\obj\Windows\gui\holz.mgcontent" />
+    <None Include="Content\obj\Windows\gui\pixel.mgcontent" />
+    <None Include="Content\obj\Windows\gui\stein.mgcontent" />
+    <None Include="Content\obj\Windows\gui\werkzeug.mgcontent" />
+    <None Include="Content\obj\Windows\terrain\0.mgcontent" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
